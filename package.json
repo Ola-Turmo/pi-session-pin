@@ -1,0 +1,41 @@
+{
+  "name": "pi-session-pin",
+  "version": "0.1.0",
+  "description": "Bookmark important conversation moments in pi sessions",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "bookmark",
+    "pin",
+    "session",
+    "label"
+  ],
+  "author": "Ola Turmo",
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./dist"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": ">=0.60.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
